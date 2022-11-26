@@ -2,7 +2,7 @@
 
 namespace StudentProject
 {
-    public class Student : Instruit
+    public class Student : Instruit, StudentInterface 
     {
         private string specialitate;
 

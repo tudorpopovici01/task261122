@@ -14,6 +14,8 @@ namespace StudentProject
             student.averageMark = student.averageMark * 0.85;//micsoram cu 15%
             masterand.averageMark = masterand.averageMark * 0.95;//micsoram cu 5%
             control(student, masterand);
+            Student student1 = new Student();
+            student1.showJsonFormat("Nanu Iulia", "IS31Z", 9);
             Console.ReadKey();
         }
 
