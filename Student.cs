@@ -1,29 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace StudentProject
 {
-    public class Student
+    public class Student : Person
     {
-        private string nume;
         protected string grup;
         public double averageMark;
+        private string specialitate;
 
-        
-        public string Nume 
-        {
-            get 
-            {
-                return this.nume;
-            }
-
-            set 
-            {
-                this.nume = value;
-            }
-        }
 
         public string Grup
         {
@@ -34,7 +18,7 @@ namespace StudentProject
 
             set
             {
-                this.nume = grup;
+                this.grup = value;
             }
         }
 
@@ -43,9 +27,15 @@ namespace StudentProject
             get { return this.averageMark; }
             set { this.averageMark = value; }
         }
+
+        public string Specialitate
+        {
+            get { return this.specialitate; }
+            set { this.specialitate = value; }
+        }
         public Student() 
         {
-            this.nume = "Popovici Tudor";
+            this.Nume = "Popovici Tudor";
             this.grup = "IS41R";
             this.averageMark = 9;
             
@@ -63,7 +53,7 @@ namespace StudentProject
 
         public Student(String nume)
         {
-            this.nume = nume;
+            this.Nume = nume;
         }
 
         public Student(Double averageMark)
@@ -73,7 +63,7 @@ namespace StudentProject
 
         public Student(String nume, String grup, Double averageMark)
         {
-            this.nume = nume;
+            this.Nume = nume;
             this.grup = grup;
             this.averageMark = averageMark;
 
