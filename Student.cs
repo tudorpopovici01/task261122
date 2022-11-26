@@ -2,31 +2,9 @@
 
 namespace StudentProject
 {
-    public class Student : Person
+    public class Student : Instruit
     {
-        protected string grup;
-        public double averageMark;
         private string specialitate;
-
-
-        public string Grup
-        {
-            get
-            {
-                return this.grup;
-            }
-
-            set
-            {
-                this.grup = value;
-            }
-        }
-
-        public double AverageMark
-        {
-            get { return this.averageMark; }
-            set { this.averageMark = value; }
-        }
 
         public string Specialitate
         {
